@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: '/',
             disallow: '/admin/', // Hide admin from search engines
         },
-        sitemap: 'https://www.mat-tech.com/sitemap.xml', // Replace with actual domain
+        sitemap: 'https://abf-material-website.vercel.app/sitemap.xml', // Your Vercel domain
     };
 }

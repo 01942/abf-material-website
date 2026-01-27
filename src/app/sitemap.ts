@@ -3,7 +3,7 @@ import { getLocalData } from '@/lib/data';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const data = await getLocalData();
-    const baseUrl = 'https://www.mat-tech.com'; // Replace with actual domain when deployed
+    const baseUrl = 'https://abf-material-website.vercel.app'; // Your Vercel domain
 
     // Static pages
     const routes = [
