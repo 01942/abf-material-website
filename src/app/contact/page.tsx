@@ -10,7 +10,7 @@ export default async function ContactPage() {
         <main className="min-h-screen bg-background flex flex-col">
             {/* Navbar */}
             <nav className="w-full h-16 border-b border-border bg-card/80 backdrop-blur-md sticky top-0 z-50 flex items-center justify-between px-8">
-                <Link href="/" className="text-xl font-bold tracking-tight text-primary">MAT-TECH 材科</Link>
+                <Link href="/" className="text-xl font-bold tracking-tight text-primary">深圳一捧春晖科技有限公司</Link>
                 <div className="flex gap-6 text-sm font-medium text-muted-foreground">
                     <Link href="/#products" className="hover:text-primary transition-colors">产品中心</Link>
                     <Link href="/technology" className="hover:text-primary transition-colors">核心技术</Link>

@@ -172,7 +172,7 @@ export default function AdminPage() {
             {/* Header */}
             <header className="bg-white border-b sticky top-0 z-10 px-6 py-4 flex items-center justify-between shadow-sm">
                 <div className="flex items-center gap-2">
-                    <div className="font-bold text-xl text-blue-900">材科后台管理</div>
+                    <div className="font-bold text-xl text-blue-900">一捧春晖科技 后台管理</div>
                     <span className="text-xs px-2 py-1 bg-yellow-100 text-yellow-800 rounded-full font-medium">BETA</span>
                 </div>
                 <div className="flex items-center gap-4">
