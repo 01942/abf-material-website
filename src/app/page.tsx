@@ -10,7 +10,7 @@ export default async function Home() {
     <main className="flex min-h-screen flex-col items-center">
       {/* Navbar */}
       <nav className="w-full h-16 border-b border-border bg-card/80 backdrop-blur-md fixed top-0 z-50 flex items-center justify-between px-8">
-        <div className="text-xl font-bold tracking-tight text-primary">MAT-TECH 材科</div>
+        <div className="text-xl font-bold tracking-tight text-primary">深圳一捧春晖科技有限公司</div>
         <div className="flex gap-6 text-sm font-medium text-muted-foreground">
           <a href="#products" className="hover:text-primary transition-colors">产品中心</a>
           <a href="/technology" className="hover:text-primary transition-colors">核心技术</a>
