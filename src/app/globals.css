@@ -1,26 +1,62 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
+@theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/*
+  Define the actual color values (HSL/RGB) as CSS variables.
+  Tailwind v4 uses these via the mapping above.
+  Note: Tailwind v4 prefers oklch or hex/rgb directly, but we can use our HSL variables if we are careful to include 'hsl()'.
+  However, standard shadcn/ui uses space-separated HSL values and constructs the color function in config.
+  In v4, it is easier to just define the full color value in the variable.
+*/
+
+:root {
+  --background: hsl(220 30% 96%);
+  /* #eceef2 */
+  --foreground: hsl(220 15% 10%);
+
+  --primary: hsl(222 47% 31%);
+  --primary-foreground: hsl(210 40% 98%);
+
+  --secondary: hsl(210 20% 90%);
+  --secondary-foreground: hsl(222 47% 11%);
+
+  --accent: hsl(199 89% 48%);
+  --accent-foreground: hsl(210 40% 98%);
+
+  --muted: hsl(217 19% 27%);
+  --muted-foreground: hsl(215 20% 65%);
+
+  --card: hsl(0 0% 100%);
+  --card-foreground: hsl(222 47% 11%);
+
+  --border: hsl(214 32% 91%);
+  --input: hsl(214 32% 91%);
+  --ring: hsl(222 47% 31%);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-background text-foreground;
 }
