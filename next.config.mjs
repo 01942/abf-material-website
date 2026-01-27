@@ -1,10 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    // Ensure we trace the data folder for Vercel
-    experimental: {
-        outputFileTracingIncludes: {
-            '/*': ['./data/**/*'],
-        },
+    // Fix: Move outputFileTracingIncludes to root level (Next.js 16+)
+    outputFileTracingIncludes: {
+        '/*': ['./data/**/*'],
     },
 };
 
