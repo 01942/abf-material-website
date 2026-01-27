@@ -129,6 +129,31 @@ export default function AdminPage() {
         setContent({ ...content, products: newProducts });
     };
 
+    const updateArticle = (index: number, field: keyof Article, value: any) => {
+        if (!content) return;
+        const newArticles = [...content.articles];
+        newArticles[index] = { ...newArticles[index], [field]: value };
+        setContent({ ...content, articles: newArticles });
+    };
+
+    const addArticle = () => {
+        if (!content) return;
+        const newArticle: Article = {
+            id: Date.now().toString(),
+            title: "新文章标题",
+            content: "在这里输入文章内容...",
+            date: new Date().toISOString().split('T')[0]
+        };
+        setContent({ ...content, articles: [...content.articles, newArticle] });
+    };
+
+    const removeArticle = (index: number) => {
+        if (!content) return;
+        if (!confirm("Delete this article?")) return;
+        const newArticles = content.articles.filter((_, i) => i !== index);
+        setContent({ ...content, articles: newArticles });
+    };
+
     // Render Login Screen
     if (!isAuthenticated) {
         return (
@@ -392,9 +417,47 @@ export default function AdminPage() {
                             </div>
                         )}
 
-                        {activeTab === "articles" && (
-                            <div className="text-center py-20 text-gray-400 border-2 border-dashed rounded-xl">
-                                文章管理功能开发中...
+                        {activeTab === "articles" && content && (
+                            <div className="space-y-6">
+                                {content.articles.map((article, idx) => (
+                                    <div key={article.id} className="bg-white border rounded-xl p-6 shadow-sm hover:shadow-md transition">
+                                        <div className="flex justify-between items-start mb-4">
+                                            <div className="flex-1 space-y-4">
+                                                <div className="flex gap-4">
+                                                    <input
+                                                        type="text"
+                                                        value={article.title}
+                                                        onChange={(e) => updateArticle(idx, "title", e.target.value)}
+                                                        className="flex-1 text-lg font-bold border-b border-transparent hover:border-gray-300 focus:border-blue-500 outline-none transition bg-transparent"
+                                                        placeholder="文章标题"
+                                                    />
+                                                    <input
+                                                        type="date"
+                                                        value={article.date}
+                                                        onChange={(e) => updateArticle(idx, "date", e.target.value)}
+                                                        className="w-40 text-sm text-gray-500 border rounded px-2 py-1 focus:ring-1 focus:ring-blue-500 outline-none"
+                                                    />
+                                                </div>
+                                                <textarea
+                                                    value={article.content}
+                                                    onChange={(e) => updateArticle(idx, "content", e.target.value)}
+                                                    className="w-full text-gray-600 text-sm resize-none border rounded-md p-2 focus:ring-1 focus:ring-blue-500 outline-none min-h-[150px]"
+                                                    placeholder="文章内容..."
+                                                />
+                                            </div>
+                                            <button onClick={() => removeArticle(idx)} className="text-red-400 hover:text-red-600 p-2 ml-4">
+                                                <Trash size={18} />
+                                            </button>
+                                        </div>
+                                    </div>
+                                ))}
+
+                                <button
+                                    onClick={addArticle}
+                                    className="w-full py-4 border-2 border-dashed border-gray-300 rounded-xl text-gray-400 font-medium hover:border-blue-400 hover:text-blue-500 flex items-center justify-center gap-2 transition"
+                                >
+                                    <Plus size={20} /> 发布新文章
+                                </button>
                             </div>
                         )}
                     </div>
