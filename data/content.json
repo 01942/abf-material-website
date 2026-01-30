@@ -1,73 +1,245 @@
 {
     "products": [
         {
+            "id": "f100",
+            "name": "F100 封装胶膜",
+            "series": "F",
+            "description": "F系列基础型。应用于标准封装基板，具有良好的绝缘性和工艺适应性。",
+            "imageUrl": "/images/doc/image2.png",
+            "specs": {
+                "Thickness": "10~100 μm",
+                "Tg (DMA)": "175℃",
+                "CTE (30-150℃)": "40 ppm/K",
+                "Young's Modulus": "5 GPa",
+                "Dk (5GHz)": "3.35",
+                "Df (5GHz)": "0.018"
+            }
+        },
+        {
+            "id": "f200",
+            "name": "F200 高填料封装胶膜",
+            "series": "F",
+            "description": "低CTE设计 (25 ppm/K)，适用于对尺寸稳定性要求较高的封装场景。",
+            "imageUrl": "/images/doc/image2.png",
+            "specs": {
+                "Thickness": "10~100 μm",
+                "Tg (DMA)": "175℃",
+                "CTE (30-150℃)": "25 ppm/K",
+                "Young's Modulus": "8 GPa",
+                "Dk (5GHz)": "3.35",
+                "Df (5GHz)": "0.014"
+            }
+        },
+        {
+            "id": "f300",
+            "name": "F300 高频低损耗胶膜",
+            "series": "F",
+            "description": "专为高频高速应用设计。极低的介电损耗 (Df 0.008) 和高Tg (200℃)。",
+            "imageUrl": "/images/doc/image2.png",
+            "specs": {
+                "Thickness": "10~100 μm",
+                "Tg (DMA)": "200℃",
+                "CTE (30-150℃)": "20 ppm/K",
+                "Young's Modulus": "9 GPa",
+                "Dk (5GHz)": "3.35",
+                "Df (5GHz)": "0.008"
+            }
+        },
+        {
+            "id": "f400",
+            "name": "F400 超低损耗胶膜",
+            "series": "F",
+            "description": "旗舰级低损耗材料 (Df 0.0045)。满足最严苛的5G/6G通信及AI服务器需求。",
+            "imageUrl": "/images/doc/image2.png",
+            "specs": {
+                "Thickness": "10~100 μm",
+                "Tg (DMA)": "185℃",
+                "CTE (30-150℃)": "20 ppm/K",
+                "Young's Modulus": "9 GPa",
+                "Dk (5GHz)": "3.3",
+                "Df (5GHz)": "0.0045"
+            }
+        },
+        {
+            "id": "rc10",
+            "name": "RC10 覆铜胶膜",
+            "series": "RC",
+            "description": "RC系列标准款。优异的填充性和绝缘性，适用于中高端硬板PCB。",
+            "imageUrl": "/images/doc/image5.png",
+            "specs": {
+                "Tg (DMA)": "180℃",
+                "CTE (30-150℃)": "37 ppm/K",
+                "Young's Modulus": "5 GPa",
+                "Dk (5GHz)": "3.35",
+                "Df (5GHz)": "0.018",
+                "Soldering": "288℃/10s/10 cycles"
+            }
+        },
+        {
+            "id": "rc20",
+            "name": "RC20 低CTE覆铜胶膜",
+            "series": "RC",
+            "description": "改进的尺寸稳定性 (CTE 25 ppm/K) 和更低的介电损耗 (Df 0.012)。",
+            "imageUrl": "/images/doc/image5.png",
+            "specs": {
+                "Tg (DMA)": "180℃",
+                "CTE (30-150℃)": "25 ppm/K",
+                "Young's Modulus": "8 GPa",
+                "Dk (5GHz)": "3.35",
+                "Df (5GHz)": "0.012"
+            }
+        },
+        {
+            "id": "rc30",
+            "name": "RC30 高频覆铜胶膜",
+            "series": "RC",
+            "description": "高模量 (9.5 GPa) 与低损耗 (Df 0.008) 的完美结合。耐热性极佳 (Tg 200℃)。",
+            "imageUrl": "/images/doc/image5.png",
+            "specs": {
+                "Tg (DMA)": "200℃",
+                "CTE (30-150℃)": "20 ppm/K",
+                "Young's Modulus": "9.5 GPa",
+                "Dk (5GHz)": "3.35",
+                "Df (5GHz)": "0.008"
+            }
+        },
+        {
+            "id": "rc40",
+            "name": "RC40 超低损耗覆铜胶膜",
+            "series": "RC",
+            "description": "专为极低信号损耗设计 (Df 0.0045)，适配各种高端铜箔 (RTF/VLP/超薄铜)。",
+            "imageUrl": "/images/doc/image5.png",
+            "specs": {
+                "Tg (DMA)": "175℃",
+                "CTE (30-150℃)": "20 ppm/K",
+                "Young's Modulus": "9 GPa",
+                "Dk (5GHz)": "3.3",
+                "Df (5GHz)": "0.0045"
+            }
+        },
+        {
+            "id": "cl60",
+            "name": "CL60 柔性胶膜",
+            "series": "CL",
+            "description": "高柔韧性与高延伸率 (75%)，专为FPC软板及动态弯折场景设计。",
+            "imageUrl": "/images/doc/image7.png",
+            "specs": {
+                "Thickness": "5~25 μm",
+                "Tg (DMA)": "65℃",
+                "Modulus": "1.4 GPa",
+                "Elongation": "75%",
+                "Peel Strength": "25 N/mm"
+            }
+        },
+        {
+            "id": "cl90",
+            "name": "CL90 平衡型柔性胶膜",
+            "series": "CL",
+            "description": "在柔韧性和耐热性之间取得平衡 (Tg 90℃)。",
+            "imageUrl": "/images/doc/image7.png",
+            "specs": {
+                "Thickness": "5~25 μm",
+                "Tg (DMA)": "90℃",
+                "Modulus": "2.4 GPa",
+                "Elongation": "30%",
+                "Peel Strength": "14 N/mm"
+            }
+        },
+        {
+            "id": "cl160",
+            "name": "CL160 耐热柔性胶膜",
+            "series": "CL",
+            "description": "卓越的耐热性能 (Tg 160℃)，同时保持良好的柔性。",
+            "imageUrl": "/images/doc/image7.png",
+            "specs": {
+                "Thickness": "5~25 μm",
+                "Tg (DMA)": "160℃",
+                "Modulus": "4.5 GPa",
+                "Elongation": "5%",
+                "Peel Strength": "10 N/mm"
+            }
+        },
+        {
             "id": "tc1700",
             "name": "TC1700 高性能积层胶膜",
-            "description": "专为高性能计算 (HPC) 和 AI 服务器设计。具有卓越的热稳定性 (Tg 200°C) 和低介电损耗 (Df 0.007)，满足 IC 载板和 Chiplet 封装的严苛要求。",
+            "series": "TC",
+            "description": "专为板级封装(PLP)设计。极低CTE (13 ppm/K) 和高Tg (200℃)，有效控制翘曲。",
             "imageUrl": "/images/doc/image1.jpeg",
             "specs": {
-                "熔融粘度 (Melt Viscosity)": "125℃ @ 200 Pa·s",
-                "玻璃化转变温度 (Tg-DMA)": "200°C",
-                "热膨胀系数 (CTE 30-150℃)": "13 ppm/K",
-                "杨氏模量 (Young's Modulus)": "10 GPa",
-                "介电常数 (Dk @ 5GHz)": "3.3",
-                "介电损耗 (Df @ 5GHz)": "0.007",
-                "断裂强度": "120 MPa",
-                "伸长率": "1.5%",
-                "工艺兼容性": "Sputter (溅射)"
+                "Tg (DMA)": "200℃",
+                "CTE (30-150℃)": "13 ppm/K",
+                "Young's Modulus": "10 GPa",
+                "Dk (5GHz)": "3.3",
+                "Df (5GHz)": "0.007",
+                "Sputter": "Compatible"
             }
         },
         {
             "id": "tc10",
             "name": "TC10 高导热绝缘胶膜",
-            "description": "面向高功率电子器件和电源管理应用。在保持优秀绝缘性能的同时，提供高达 8 W/m·K 的导热系数，有效解决散热瓶颈。",
-            "imageUrl": "/images/doc/image2.png",
+            "series": "TC",
+            "description": "突破性的高导热性能 (8 W/m·K)，解决高功率器件散热瓶颈。",
+            "imageUrl": "/images/doc/image1.jpeg",
             "specs": {
-                "熔融粘度 (Melt Viscosity)": "115℃ @ 230 Pa·s",
-                "玻璃化转变温度 (Tg-DMA)": "175°C",
-                "热膨胀系数 (CTE 30-150℃)": "14 ppm/K",
-                "杨氏模量 (Young's Modulus)": "8 GPa",
-                "介电常数 (Dk @ 5GHz)": "3.5",
-                "介电损耗 (Df @ 5GHz)": "0.006",
-                "导热系数 (Thermal Conductivity)": "8 W/m·K",
-                "断裂强度": "80 MPa",
-                "伸长率": "1%",
-                "工艺兼容性": "Sputter (溅射)"
+                "Thermal Conductivity": "8 W/m·K",
+                "Tg (DMA)": "175℃",
+                "CTE (30-150℃)": "14 ppm/K",
+                "Young's Modulus": "8 GPa",
+                "Dk (5GHz)": "3.5",
+                "Df (5GHz)": "0.006"
             }
         }
     ],
-    "articles": [
-        {
-            "id": "1",
-            "title": "一捧春晖科技发布新一代高性能积层胶膜",
-            "content": "随着后摩尔时代到来，先进封装技术（如 2.5D/3D、Chiplet）成为提升芯片性能的关键。深圳一捧春晖科技有限公司宣布推出具有自主知识产权的积层胶膜产品（TC系列）。\n\n新产品 TC1700 专为高密度互连 (HDI) 设计，具备极低的热膨胀系数 (CTE) 和卓越的电绝缘性能，完美匹配高算力芯片的封装需求。同时发布的 TC10 高导热系列，导热系数突破 8 W/m·K，为高功率器件散热提供了全新解决方案。",
-            "date": "2024-09-15"
+    "seriesInfo": {
+        "F": {
+            "title": "F系列 - 高性能封装胶膜",
+            "desc": "专为Chiplet、AI服务器等高端封装基板设计。支持SAP工艺，适合精细线路(L/S≤20um)。"
+        },
+        "RC": {
+            "title": "RC系列 - 覆铜胶膜",
+            "desc": "面向中高端HDI及填孔工艺。适配RTF/VLP铜箔，兼容传统压合制程。"
+        },
+        "CL": {
+            "title": "CL系列 - 柔性胶膜",
+            "desc": "FPC软板专用。具有优异的耐折性、耐热性和低吸湿性。"
+        },
+        "TC": {
+            "title": "TC系列 - 特种功能胶膜",
+            "desc": "针对扇出型板级封装(Fan-out PLP)及高功率散热需求的定制化解决方案。"
         }
-    ],
+    },
     "general": {
-        "technology": {
-            "title": "核心技术优势",
-            "content": "我们的核心竞争力源于自主研发的高分子树脂体系与无机纳米填料的精确复合技术。",
-            "sections": [
+        "about": {
+            "title": "关于一捧春晖",
+            "content": "深圳一捧春晖科技有限公司成立于2024年，注册资本1000万元，是一家专注于高端电子封装材料的科技型企业。我们致力于解决中国在高端IC载板材料领域的'卡脖子'问题，提供完全自主可控的国产化解决方案。\n\n作为国家战略新兴产业的一员，我们依托自主配方开发、先进工艺调控与行业应用的联动能力，构建了从研发到量产的完整闭环。",
+            "subsections": [
                 {
-                    "heading": "自主材料体系",
-                    "body": "突破了国外对高端积层胶膜材料的技术垄断，开发出具有完全自主知识产权的树脂配方，实现了低介电损耗与高热稳定性的完美平衡。"
+                    "title": "研发实力 (R&D)",
+                    "content": "研发中心占地近千平米，团队成员在电子封装材料领域深耕二十余年。我们拥有先进的材料设计与测试平台，构建了'分子设计-粉体改性-浆料复配-精密涂布'的完整技术链条。具备快速响应客户需求、进行定向开发与产品迭代的能力。"
                 },
                 {
-                    "heading": "精密制造工艺",
-                    "body": "采用先进的纳米分散技术，确保无机填料在树脂基体中的均匀分布，从而获得优异的机械性能和极低的粗糙度，支持微米级线路加工。"
-                },
-                {
-                    "heading": "定制化解决方案",
-                    "body": "针对客户的不同应用场景（如高频通讯、高功率计算、电源管理），提供从 TC1700（低损耗）到 TC10（高导热）的系列化产品组合。"
+                    "title": "制造能力 (Manufacturing)",
+                    "content": "工厂配备高端分散、涂布及检测设备，建成标准化的胶膜材料生产线，年产能达100万平方米。生产过程严格控制涂布均匀性和厚度精度，确保每一卷产品都满足半导体级的严苛质量标准。"
                 }
             ]
         },
-        "about": {
-            "title": "关于一捧春晖",
-            "content": "深圳一捧春晖科技有限公司是一家专注于半导体先进封装材料研发与产业化的高科技企业。公司致力于解决中国在高端 IC 载板材料领域的'卡脖子'问题。\n\n我们聚焦于高端 Build-up Film (积层胶膜) 的国产化替代，产品广泛应用于 CPU、GPU、AI 芯片及 5G/6G 通信模组的封装。通过持续的技术创新，我们为全球客户提供高性能、高可靠性的电子材料解决方案。",
-            "mission": "以材料创新驱动芯片技术的无限可能。",
-            "vision": "成为全球信赖的半导体关键材料合作伙伴。"
+        "technology": {
+            "title": "核心技术",
+            "content": "我们的技术护城河建立在三大支柱之上：",
+            "sections": [
+                {
+                    "heading": "自主树脂体系",
+                    "body": "独立开发的改性环氧树脂配方，彻底摆脱了国外专利限制，实现了高耐热与低损耗的性能突破。"
+                },
+                {
+                    "heading": "纳米分散技术",
+                    "body": "通过独特的表面处理工艺，实现无机填料在树脂中的纳米级均匀分散，这是保证高可靠性和超薄膜材性能的关键。"
+                },
+                {
+                    "heading": "精密卷对卷涂布",
+                    "body": "自主开发的连续涂布与分级烘烤工艺，实现了微米级厚度控制和极低的产品内应力。"
+                }
+            ]
         },
         "contact": {
             "title": "联系方式",

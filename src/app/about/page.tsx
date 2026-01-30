@@ -28,18 +28,8 @@ export default async function AboutPage() {
                 <h1 className="text-4xl font-bold text-primary mb-8">{about.title || "关于我们"}</h1>
 
                 <div className="bg-gradient-to-br from-primary/5 to-accent/5 p-8 rounded-2xl mb-12">
-                    <p className="text-lg text-foreground leading-loose">
+                    <div className="prose prose-lg dark:prose-invert max-w-none text-muted-foreground leading-relaxed whitespace-pre-line">
                         {about.content}
-                    </p>
-                </div>
-
-                <div className="grid md:grid-cols-2 gap-8">
-                    <div className="p-6 border border-border rounded-xl bg-card">
-                        <h3 className="text-xl font-bold mb-4 text-primary">企业使命</h3>
-                        <p className="text-muted-foreground">{about.mission}</p>
-                    </div>
-                    <div className="p-6 border border-border rounded-xl bg-card">
-                        <h3 className="text-xl font-bold mb-4 text-primary">企业愿景</h3>
                         <p className="text-muted-foreground">{about.vision}</p>
                     </div>
                 </div>

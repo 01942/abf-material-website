@@ -53,41 +53,131 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* Products Section */}
+      {/* Product Series Section */}
       <section id="products" className="w-full py-24 px-8 max-w-7xl mx-auto bg-background">
-        <div className="mb-12 text-center">
-          <h2 className="text-3xl font-bold text-primary mb-4">材料解决方案</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">针对先进IC封装的严苛要求而研发，具有超低介电损耗和极高的可靠性。</p>
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent inline-block mb-4">
+            全系列解决方案
+          </h2>
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            从封装基板到柔性电路，我们提供覆盖全场景的高性能胶膜材料
+          </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {data.products.map((product: any) => (
-            <a href={`/products/${product.id}`} key={product.id} className="group relative flex flex-col justify-between p-6 rounded-2xl border border-border bg-card hover:shadow-xl hover:-translate-y-1 transition-all duration-300 hover:border-accent/30 overflow-hidden cursor-pointer">
-              <div className="absolute inset-0 bg-gradient-to-br from-transparent to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity" />
-
-              <div>
-                <div className="w-12 h-12 rounded-lg bg-secondary/50 flex items-center justify-center mb-6 group-hover:bg-accent/10 transition-colors">
-                  <div className="w-6 h-6 bg-gradient-to-br from-primary to-accent rounded-sm opacity-80" />
-                </div>
-                <h3 className="text-xl font-bold mb-3 text-primary">{product.name}</h3>
-                <p className="text-muted-foreground text-sm mb-6 leading-relaxed">{product.description}</p>
-
-                {/* Micro-specs */}
-                <div className="space-y-2 mb-6">
-                  {Object.entries(product.specs || {}).slice(0, 3).map(([key, val]: any) => (
-                    <div key={key} className="flex justify-between text-xs border-b border-border/50 pb-1">
-                      <span className="text-muted-foreground">{key}</span>
-                      <span className="font-medium text-foreground">{val}</span>
-                    </div>
-                  ))}
-                </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* F Series */}
+          <div className="group bg-card border border-border rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 hover:border-primary/50 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl -mr-16 -mt-16 transition-all group-hover:bg-blue-500/20" />
+            <h3 className="text-2xl font-bold text-foreground mb-2 flex items-center gap-2">
+              <span className="text-primary">F系列</span> 封装胶膜
+            </h3>
+            <p className="text-muted-foreground mb-6">高性能计算、Chiplet、AI服务器首选。</p>
+            <div className="space-y-4">
+              <div className="flex flex-wrap gap-2">
+                {data.products.filter((p: any) => p.series === 'F').map((p: any) => (
+                  <Link key={p.id} href={`/products/${p.id}`} className="px-3 py-1 bg-secondary rounded-full text-sm font-medium hover:bg-primary hover:text-white transition-colors">
+                    {p.name.split(' ')[0]}
+                  </Link>
+                ))}
               </div>
+              <p className="text-xs text-muted-foreground pt-2">特点：低CTE、低损耗、细线路加工(SAP)</p>
+            </div>
+          </div>
 
-              <div className="w-full py-2 rounded-lg bg-secondary/30 text-secondary-foreground text-sm font-medium hover:bg-primary hover:text-white transition-colors text-center">
-                查看规格书
+          {/* RC Series */}
+          <div className="group bg-card border border-border rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 hover:border-accent/50 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-purple-500/10 rounded-full blur-3xl -mr-16 -mt-16 transition-all group-hover:bg-purple-500/20" />
+            <h3 className="text-2xl font-bold text-foreground mb-2 flex items-center gap-2">
+              <span className="text-accent">RC系列</span> 覆铜胶膜
+            </h3>
+            <p className="text-muted-foreground mb-6">高阶HDI、埋入式器件、厚铜填胶。</p>
+            <div className="space-y-4">
+              <div className="flex flex-wrap gap-2">
+                {data.products.filter((p: any) => p.series === 'RC').map((p: any) => (
+                  <Link key={p.id} href={`/products/${p.id}`} className="px-3 py-1 bg-secondary rounded-full text-sm font-medium hover:bg-accent hover:text-white transition-colors">
+                    {p.name.split(' ')[0]}
+                  </Link>
+                ))}
               </div>
-            </a>
-          ))}
+              <p className="text-xs text-muted-foreground pt-2">特点：兼容传统压合、优异填充性</p>
+            </div>
+          </div>
+
+          {/* CL Series */}
+          <div className="group bg-card border border-border rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 hover:border-green-500/50 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-green-500/10 rounded-full blur-3xl -mr-16 -mt-16 transition-all group-hover:bg-green-500/20" />
+            <h3 className="text-2xl font-bold text-foreground mb-2 flex items-center gap-2">
+              <span className="text-green-600">CL系列</span> 柔性胶膜
+            </h3>
+            <p className="text-muted-foreground mb-6">FPC软板、动态折叠应用。</p>
+            <div className="space-y-4">
+              <div className="flex flex-wrap gap-2">
+                {data.products.filter((p: any) => p.series === 'CL').map((p: any) => (
+                  <Link key={p.id} href={`/products/${p.id}`} className="px-3 py-1 bg-secondary rounded-full text-sm font-medium hover:bg-green-600 hover:text-white transition-colors">
+                    {p.name.split(' ')[0]}
+                  </Link>
+                ))}
+              </div>
+              <p className="text-xs text-muted-foreground pt-2">特点：高延伸率、耐折、高粘接力</p>
+            </div>
+          </div>
+
+          {/* TC Series */}
+          <div className="group bg-card border border-border rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 hover:border-orange-500/50 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-orange-500/10 rounded-full blur-3xl -mr-16 -mt-16 transition-all group-hover:bg-orange-500/20" />
+            <h3 className="text-2xl font-bold text-foreground mb-2 flex items-center gap-2">
+              <span className="text-orange-600">TC系列</span> 特种胶膜
+            </h3>
+            <p className="text-muted-foreground mb-6">板级封装(PLP)与高功率散热。</p>
+            <div className="space-y-4">
+              <div className="flex flex-wrap gap-2">
+                {data.products.filter((p: any) => p.series === 'TC').map((p: any) => (
+                  <Link key={p.id} href={`/products/${p.id}`} className="px-3 py-1 bg-secondary rounded-full text-sm font-medium hover:bg-orange-600 hover:text-white transition-colors">
+                    {p.name.split(' ')[0]}
+                  </Link>
+                ))}
+              </div>
+              <p className="text-xs text-muted-foreground pt-2">特点：极低CTE (13ppm)、高导热(8W)</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Section Highlights - Enhanced */}
+      <section className="w-full py-24 px-8 bg-secondary/5">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+          <div className="space-y-6">
+            <h2 className="text-3xl font-bold text-primary">研发与制造</h2>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              {data.general?.about?.content?.split('\n')[0]}
+            </p>
+            <div className="grid grid-cols-1 gap-6 pt-4">
+              <div className="border-l-4 border-primary pl-4">
+                <h4 className="font-bold text-foreground">研发实力</h4>
+                <p className="text-sm text-muted-foreground mt-1">
+                  {data.general?.about?.subsections?.[0]?.content}
+                </p>
+              </div>
+              <div className="border-l-4 border-accent pl-4">
+                <h4 className="font-bold text-foreground">制造能力</h4>
+                <p className="text-sm text-muted-foreground mt-1">
+                  {data.general?.about?.subsections?.[1]?.content}
+                </p>
+              </div>
+            </div>
+            <div className="pt-4">
+              <Link href="/about" className="text-primary font-medium hover:underline underline-offset-4">
+                了解更多关于我们 &rarr;
+              </Link>
+            </div>
+          </div>
+          <div className="relative h-[500px] bg-card rounded-2xl overflow-hidden shadow-2xl border border-border">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/images/doc/image4.jpeg" alt="R&D Lab" className="absolute inset-0 w-full h-full object-cover" />
+            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+              <p className="text-white font-medium">拥有近千平米先进材料研发实验室</p>
+            </div>
+          </div>
         </div>
       </section>
 
