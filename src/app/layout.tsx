@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google"; // High-tech, clean font
 import "./globals.css";
 import { cn } from "@/lib/utils";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
@@ -40,7 +37,7 @@ export default function RootLayout({
         bg-background/text-foreground sets the base scientific theme
         antialiased ensures text is crisp
       */}
-      <body className={cn(inter.className, "min-h-screen bg-background text-foreground antialiased")}>
+      <body className={cn("min-h-screen bg-background text-foreground antialiased font-sans")}>
         {children}
       </body>
     </html>
