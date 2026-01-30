@@ -1,4 +1,6 @@
 import { getLocalData } from "@/lib/data";
+
+export const dynamic = 'force-dynamic';
 import Link from "next/link";
 import { Cpu, Zap, Thermometer } from "lucide-react";
 import { Metadata } from "next";

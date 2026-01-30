@@ -4,6 +4,8 @@ import { ArrowLeft, Download, Share2 } from "lucide-react";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 
+export const dynamic = 'force-dynamic';
+
 type Props = {
     params: { id: string }
 };
