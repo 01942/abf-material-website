@@ -1,7 +1,7 @@
 import { getLocalData } from "@/lib/data";
+import Link from "next/link";
 
 export const dynamic = 'force-dynamic';
-import Link from "next/link";
 
 export default async function AboutPage() {
     const data = await getLocalData();
@@ -30,7 +30,31 @@ export default async function AboutPage() {
                 <div className="bg-gradient-to-br from-primary/5 to-accent/5 p-8 rounded-2xl mb-12">
                     <div className="prose prose-lg dark:prose-invert max-w-none text-muted-foreground leading-relaxed whitespace-pre-line">
                         {about.content}
-                        <p className="text-muted-foreground">{about.vision}</p>
+                    </div>
+                </div>
+
+                {/* Subsections (R&D, Factory) */}
+                {about.subsections && about.subsections.length > 0 && (
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 pt-4">
+                        {about.subsections.map((section: any, idx: number) => (
+                            <div key={idx} className="bg-card border border-border rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow">
+                                <h3 className="text-xl font-bold text-primary mb-4">{section.title}</h3>
+                                <p className="text-base text-muted-foreground leading-relaxed">
+                                    {section.content}
+                                </p>
+                            </div>
+                        ))}
+                    </div>
+                )}
+
+                <div className="grid md:grid-cols-2 gap-8 mt-12 pt-12 border-t border-border">
+                    <div className="p-6 border border-border rounded-xl bg-card">
+                        <h3 className="text-xl font-bold mb-4 text-primary">企业使命</h3>
+                        <p className="text-muted-foreground">{about.mission || "以材料创新驱动芯片技术的无限可能"}</p>
+                    </div>
+                    <div className="p-6 border border-border rounded-xl bg-card">
+                        <h3 className="text-xl font-bold mb-4 text-primary">企业愿景</h3>
+                        <p className="text-muted-foreground">{about.vision || "成为全球信赖的半导体关键材料合作伙伴"}</p>
                     </div>
                 </div>
             </div>
