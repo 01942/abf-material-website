@@ -7,12 +7,13 @@ import { Metadata } from "next";
 export const dynamic = 'force-dynamic';
 
 type Props = {
-    params: { id: string }
+    params: Promise<{ id: string }>
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
+    const { id } = await params;
     const data = await getLocalData();
-    const product = data.products.find((p: any) => p.id === params.id);
+    const product = data.products.find((p: any) => p.id === id);
 
     if (!product) {
         return { title: '产品未找到' };
@@ -33,8 +34,9 @@ export async function generateStaticParams() {
 }
 
 export default async function ProductPage({ params }: Props) {
+    const { id } = await params;
     const data = await getLocalData();
-    const product = data.products.find((p: any) => p.id === params.id);
+    const product = data.products.find((p: any) => p.id === id);
 
     if (!product) {
         notFound();
