@@ -59,4 +59,10 @@
 
 body {
   @apply bg-background text-foreground;
+  font-family: "Times New Roman", Times, serif, system-ui, -apple-system, sans-serif;
+}
+
+/* Ensure numbers are specifically Times New Roman even if font-sans is utility used elsewhere */
+.font-sans {
+  font-family: "Times New Roman", Times, serif !important;
 }

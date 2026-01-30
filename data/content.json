@@ -8,11 +8,17 @@
             "imageUrl": "/images/doc/image2.png",
             "specs": {
                 "Thickness": "10~100 μm",
+                "Min. Melt viscosity": "115℃@20 Pa·s",
                 "Tg (DMA)": "175℃",
+                "Tg (TMA)": "150℃",
                 "CTE (30-150℃)": "40 ppm/K",
+                "CTE (150-240℃)": "120 ppm/K",
                 "Young's Modulus": "5 GPa",
+                "Breaking strength": "100 MPa",
+                "Elongation": "5%",
                 "Dk (5GHz)": "3.35",
-                "Df (5GHz)": "0.018"
+                "Df (5GHz)": "0.018",
+                "Soldering resistance": "288℃/10s/3 cycles"
             }
         },
         {
@@ -23,11 +29,17 @@
             "imageUrl": "/images/doc/image2.png",
             "specs": {
                 "Thickness": "10~100 μm",
+                "Min. Melt viscosity": "115℃@100 Pa·s",
                 "Tg (DMA)": "175℃",
+                "Tg (TMA)": "150℃",
                 "CTE (30-150℃)": "25 ppm/K",
+                "CTE (150-240℃)": "100 ppm/K",
                 "Young's Modulus": "8 GPa",
+                "Breaking strength": "100 MPa",
+                "Elongation": "2.5%",
                 "Dk (5GHz)": "3.35",
-                "Df (5GHz)": "0.014"
+                "Df (5GHz)": "0.014",
+                "Soldering resistance": "288℃/10s/3 cycles"
             }
         },
         {
@@ -38,11 +50,17 @@
             "imageUrl": "/images/doc/image2.png",
             "specs": {
                 "Thickness": "10~100 μm",
+                "Min. Melt viscosity": "120℃@80 Pa·s",
                 "Tg (DMA)": "200℃",
+                "Tg (TMA)": "175℃",
                 "CTE (30-150℃)": "20 ppm/K",
+                "CTE (150-240℃)": "65 ppm/K",
                 "Young's Modulus": "9 GPa",
+                "Breaking strength": "105 MPa",
+                "Elongation": "2%",
                 "Dk (5GHz)": "3.35",
-                "Df (5GHz)": "0.008"
+                "Df (5GHz)": "0.008",
+                "Soldering resistance": "288℃/10s/3 cycles"
             }
         },
         {
@@ -53,26 +71,38 @@
             "imageUrl": "/images/doc/image2.png",
             "specs": {
                 "Thickness": "10~100 μm",
+                "Min. Melt viscosity": "120℃@100 Pa·s",
                 "Tg (DMA)": "185℃",
+                "Tg (TMA)": "160℃",
                 "CTE (30-150℃)": "20 ppm/K",
+                "CTE (150-240℃)": "70 ppm/K",
                 "Young's Modulus": "9 GPa",
+                "Breaking strength": "110 MPa",
+                "Elongation": "2%",
                 "Dk (5GHz)": "3.3",
-                "Df (5GHz)": "0.0045"
+                "Df (5GHz)": "0.0045",
+                "Soldering resistance": "288℃/10s/3 cycles"
             }
         },
         {
             "id": "rc10",
             "name": "RC10 覆铜胶膜",
             "series": "RC",
-            "description": "RC系列标准款。优异的填充性和绝缘性，适用于中高端硬板PCB。",
+            "description": "IRC系列标准款。优异的填充性和绝缘性，适用于中高端硬板PCB。",
             "imageUrl": "/images/doc/image5.png",
             "specs": {
+                "Thickness": "10~100 μm",
+                "Min. Melt viscosity": "115℃@20 Pa·s",
                 "Tg (DMA)": "180℃",
+                "Tg (TMA)": "155℃",
                 "CTE (30-150℃)": "37 ppm/K",
+                "CTE (150-240℃)": "120 ppm/K",
                 "Young's Modulus": "5 GPa",
+                "Breaking strength": "100 MPa",
+                "Elongation": "5%",
                 "Dk (5GHz)": "3.35",
                 "Df (5GHz)": "0.018",
-                "Soldering": "288℃/10s/10 cycles"
+                "Soldering resistance": "288℃/10s/10 cycles"
             }
         },
         {
@@ -82,11 +112,18 @@
             "description": "改进的尺寸稳定性 (CTE 25 ppm/K) 和更低的介电损耗 (Df 0.012)。",
             "imageUrl": "/images/doc/image5.png",
             "specs": {
+                "Thickness": "10~100 μm",
+                "Min. Melt viscosity": "115℃@100 Pa·s",
                 "Tg (DMA)": "180℃",
+                "Tg (TMA)": "155℃",
                 "CTE (30-150℃)": "25 ppm/K",
+                "CTE (150-240℃)": "100 ppm/K",
                 "Young's Modulus": "8 GPa",
+                "Breaking strength": "100 MPa",
+                "Elongation": "2.5%",
                 "Dk (5GHz)": "3.35",
-                "Df (5GHz)": "0.012"
+                "Df (5GHz)": "0.012",
+                "Soldering resistance": "288℃/10s/10 cycles"
             }
         },
         {
@@ -96,11 +133,18 @@
             "description": "高模量 (9.5 GPa) 与低损耗 (Df 0.008) 的完美结合。耐热性极佳 (Tg 200℃)。",
             "imageUrl": "/images/doc/image5.png",
             "specs": {
+                "Thickness": "10~100 μm",
+                "Min. Melt viscosity": "120℃@80 Pa·s",
                 "Tg (DMA)": "200℃",
+                "Tg (TMA)": "175℃",
                 "CTE (30-150℃)": "20 ppm/K",
+                "CTE (150-240℃)": "60 ppm/K",
                 "Young's Modulus": "9.5 GPa",
+                "Breaking strength": "110 MPa",
+                "Elongation": "2%",
                 "Dk (5GHz)": "3.35",
-                "Df (5GHz)": "0.008"
+                "Df (5GHz)": "0.008",
+                "Soldering resistance": "288℃/10s/10 cycles"
             }
         },
         {
@@ -110,11 +154,18 @@
             "description": "专为极低信号损耗设计 (Df 0.0045)，适配各种高端铜箔 (RTF/VLP/超薄铜)。",
             "imageUrl": "/images/doc/image5.png",
             "specs": {
+                "Thickness": "10~100 μm",
+                "Min. Melt viscosity": "120℃@100 Pa·s",
                 "Tg (DMA)": "175℃",
+                "Tg (TMA)": "150℃",
                 "CTE (30-150℃)": "20 ppm/K",
+                "CTE (150-240℃)": "80 ppm/K",
                 "Young's Modulus": "9 GPa",
+                "Breaking strength": "110 MPa",
+                "Elongation": "2%",
                 "Dk (5GHz)": "3.3",
-                "Df (5GHz)": "0.0045"
+                "Df (5GHz)": "0.0045",
+                "Soldering resistance": "288℃/10s/10 cycles"
             }
         },
         {
@@ -127,8 +178,14 @@
                 "Thickness": "5~25 μm",
                 "Tg (DMA)": "65℃",
                 "Modulus": "1.4 GPa",
+                "Breaking strength": "25 MPa",
                 "Elongation": "75%",
-                "Peel Strength": "25 N/mm"
+                "Peel Strength": "25 N/mm",
+                "Dk (5GHz)": "3.3",
+                "Df (5GHz)": "0.02",
+                "Water absorption": "1.1",
+                "Resin flow": "≤0.2 mm",
+                "Soldering resistance": "288℃/10s/3 cycles"
             }
         },
         {
@@ -141,8 +198,14 @@
                 "Thickness": "5~25 μm",
                 "Tg (DMA)": "90℃",
                 "Modulus": "2.4 GPa",
+                "Breaking strength": "45 MPa",
                 "Elongation": "30%",
-                "Peel Strength": "14 N/mm"
+                "Peel Strength": "14 N/mm",
+                "Dk (5GHz)": "3.2",
+                "Df (5GHz)": "0.02",
+                "Water absorption": "0.8",
+                "Resin flow": "≤0.2 mm",
+                "Soldering resistance": "288℃/10s/3 cycles"
             }
         },
         {
@@ -155,8 +218,14 @@
                 "Thickness": "5~25 μm",
                 "Tg (DMA)": "160℃",
                 "Modulus": "4.5 GPa",
+                "Breaking strength": "75 MPa",
                 "Elongation": "5%",
-                "Peel Strength": "10 N/mm"
+                "Peel Strength": "10 N/mm",
+                "Dk (5GHz)": "3.2",
+                "Df (5GHz)": "0.02",
+                "Water absorption": "1.1",
+                "Resin flow": "≤0.2 mm",
+                "Soldering resistance": "288℃/10s/3 cycles"
             }
         },
         {
@@ -166,12 +235,20 @@
             "description": "专为板级封装(PLP)设计。极低CTE (13 ppm/K) 和高Tg (200℃)，有效控制翘曲。",
             "imageUrl": "/images/doc/image1.jpeg",
             "specs": {
+                "Min. Melt viscosity": "125℃@200 Pa·s",
                 "Tg (DMA)": "200℃",
+                "Tg (TMA)": "175℃",
                 "CTE (30-150℃)": "13 ppm/K",
+                "CTE (150-240℃)": "47 ppm/K",
                 "Young's Modulus": "10 GPa",
+                "Breaking strength": "120 MPa",
+                "Elongation": "1.5%",
                 "Dk (5GHz)": "3.3",
                 "Df (5GHz)": "0.007",
-                "Sputter": "Compatible"
+                "Thermal conductivity": "0.8 W/m·K",
+                "Sputter": "Compatible",
+                "Soldering": "√",
+                "Flux residue": "√"
             }
         },
         {
@@ -181,12 +258,19 @@
             "description": "突破性的高导热性能 (8 W/m·K)，解决高功率器件散热瓶颈。",
             "imageUrl": "/images/doc/image1.jpeg",
             "specs": {
-                "Thermal Conductivity": "8 W/m·K",
+                "Min. Melt viscosity": "115℃@230 Pa·s",
                 "Tg (DMA)": "175℃",
+                "Tg (TMA)": "150℃",
                 "CTE (30-150℃)": "14 ppm/K",
+                "CTE (150-240℃)": "40 ppm/K",
                 "Young's Modulus": "8 GPa",
+                "Breaking strength": "80 MPa",
+                "Elongation": "1%",
                 "Dk (5GHz)": "3.5",
-                "Df (5GHz)": "0.006"
+                "Df (5GHz)": "0.006",
+                "Thermal conductivity": "8 W/m·K",
+                "Sputter": "Compatible",
+                "Soldering": "√"
             }
         }
     ],
