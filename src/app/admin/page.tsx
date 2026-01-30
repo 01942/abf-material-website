@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Plus, Trash, Save, Lock, LogOut } from "lucide-react";
+import { Plus, Trash, Save, Lock, LogOut, FileText } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 // Define Types
@@ -24,6 +24,7 @@ type GeneralContent = {
     technology: {
         title: string;
         content: string;
+        sections: { heading: string; body: string }[];
     };
     about: {
         title: string;
@@ -201,6 +202,9 @@ export default function AdminPage() {
                     <span className="text-xs px-2 py-1 bg-yellow-100 text-yellow-800 rounded-full font-medium">BETA</span>
                 </div>
                 <div className="flex items-center gap-4">
+                    <a href="/admin/reports" className="flex items-center gap-2 text-blue-600 bg-blue-50 px-3 py-2 rounded-lg hover:bg-blue-100 transition text-sm font-medium">
+                        <FileText size={18} /> 报表审批
+                    </a>
                     {statusMsg && <span className="text-sm font-medium text-green-600 transition-opacity">{statusMsg}</span>}
                     <button
                         onClick={handleSave}
@@ -331,6 +335,44 @@ export default function AdminPage() {
                                                 value={content.general.technology?.content}
                                                 onChange={(e) => updateGeneral('technology', 'content', e.target.value)}
                                             />
+                                        </div>
+
+                                        {/* Technology Sections Editor */}
+                                        <div className="bg-gray-50 p-4 rounded-lg">
+                                            <h3 className="text-sm font-bold text-gray-700 mb-3">核心优势列表 (Sections)</h3>
+                                            <div className="space-y-4">
+                                                {content.general.technology?.sections?.map((section, idx) => (
+                                                    <div key={idx} className="bg-white p-3 rounded border shadow-sm">
+                                                        <input
+                                                            type="text"
+                                                            className="w-full font-bold mb-2 border-b border-transparent hover:border-gray-200 outline-none"
+                                                            value={section.heading}
+                                                            onChange={(e) => {
+                                                                const newSections = [...(content.general?.technology?.sections || [])];
+                                                                newSections[idx] = { ...newSections[idx], heading: e.target.value };
+                                                                // Use a direct update since updateGeneral is shallow for the 'technology' object
+                                                                const newTech = { ...content.general?.technology, sections: newSections };
+                                                                // @ts-ignore
+                                                                setContent({ ...content, general: { ...content.general, technology: newTech } });
+                                                            }}
+                                                            placeholder="优势标题"
+                                                        />
+                                                        <textarea
+                                                            className="w-full text-sm text-gray-600 resize-none outline-none"
+                                                            value={section.body}
+                                                            rows={3}
+                                                            onChange={(e) => {
+                                                                const newSections = [...(content.general?.technology?.sections || [])];
+                                                                newSections[idx] = { ...newSections[idx], body: e.target.value };
+                                                                const newTech = { ...content.general?.technology, sections: newSections };
+                                                                // @ts-ignore
+                                                                setContent({ ...content, general: { ...content.general, technology: newTech } });
+                                                            }}
+                                                            placeholder="优势描述..."
+                                                        />
+                                                    </div>
+                                                ))}
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
