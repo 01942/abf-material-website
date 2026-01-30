@@ -20,7 +20,7 @@ export default async function TechnologyPage() {
             <nav className="w-full h-16 border-b border-border bg-card/80 backdrop-blur-md sticky top-0 z-50 flex items-center justify-between px-8">
                 <Link href="/" className="flex items-center gap-3">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src="/images/doc/image8.jpeg" alt="Logo" className="h-8 w-auto" />
+                    <div className="h-8 w-8 bg-primary/10 rounded-full flex items-center justify-center mr-2"><span className="text-primary font-serif font-bold text-lg">Y</span></div>
                     <span className="text-xl font-bold tracking-tight text-primary">深圳一捧春晖科技有限公司</span>
                 </Link>
                 <div className="flex gap-6 text-sm font-medium text-muted-foreground">
