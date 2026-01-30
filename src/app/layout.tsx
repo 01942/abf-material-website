@@ -7,11 +7,11 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | 深圳一捧春晖科技有限公司 - 先进ABF类胶膜材料",
-    default: "深圳一捧春晖科技有限公司 | 高性能ABF类积层胶膜 (Ajinomoto Build-up Film) 解决方案",
+    template: "%s | 深圳一捧春晖科技有限公司 - 高性能积层胶膜材料",
+    default: "深圳一捧春晖科技有限公司 | 自主研发高性能积层胶膜 (Build-up Film) 解决方案",
   },
-  description: "深圳一捧春晖科技有限公司专注于研发和生产高性能ABF类积层胶膜，服务于先进半导体封装(2.5D/3D, Chiplet)。提供低介电损耗、高热稳定性的IC封装材料解决方案。",
-  keywords: ["ABF", "积层胶膜", "半导体封装", "先进封装", "Ajinomoto Build-up Film", "HDI", "IC载板", "介电材料", "一捧春晖科技"],
+  description: "深圳一捧春晖科技有限公司专注于研发和生产高性能积层胶膜，服务于先进半导体封装(2.5D/3D, Chiplet)。提供低介电损耗、高热稳定性的IC封装材料解决方案。",
+  keywords: ["积层胶膜", "Build-up Film", "半导体封装", "先进封装", "HDI", "IC载板", "介电材料", "一捧春晖科技"],
   authors: [{ name: "深圳一捧春晖科技有限公司" }],
   openGraph: {
     type: "website",

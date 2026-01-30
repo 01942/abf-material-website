@@ -6,7 +6,7 @@ import { Cpu, Zap, Thermometer } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "核心技术 - 低损耗/高可靠性ABF胶膜",
+    title: "核心技术 - 低损耗/高可靠性积层胶膜",
     description: "深入了解一捧春晖科技的积层胶膜技术，包括优化的树脂体系、纳米填料分散技术及卓越的热机械性能。",
 };
 
@@ -18,7 +18,11 @@ export default async function TechnologyPage() {
         <main className="min-h-screen bg-background flex flex-col">
             {/* Navbar */}
             <nav className="w-full h-16 border-b border-border bg-card/80 backdrop-blur-md sticky top-0 z-50 flex items-center justify-between px-8">
-                <Link href="/" className="text-xl font-bold tracking-tight text-primary">深圳一捧春晖科技有限公司</Link>
+                <Link href="/" className="flex items-center gap-3">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src="/images/doc/image12.png" alt="Logo" className="h-8 w-auto" />
+                    <span className="text-xl font-bold tracking-tight text-primary">深圳一捧春晖科技有限公司</span>
+                </Link>
                 <div className="flex gap-6 text-sm font-medium text-muted-foreground">
                     <Link href="/#products" className="hover:text-primary transition-colors">产品中心</Link>
                     <Link href="/technology" className="text-primary font-bold">核心技术</Link>

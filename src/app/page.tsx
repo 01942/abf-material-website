@@ -10,30 +10,40 @@ export default async function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center">
       {/* Navbar */}
-      <nav className="w-full h-16 border-b border-border bg-card/80 backdrop-blur-md fixed top-0 z-50 flex items-center justify-between px-8">
-        <div className="text-xl font-bold tracking-tight text-primary">深圳一捧春晖科技有限公司</div>
+      <nav className="w-full h-16 border-b border-border bg-card/80 backdrop-blur-md sticky top-0 z-50 flex items-center justify-between px-8">
+        <Link href="/" className="flex items-center gap-3">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/doc/image12.png" alt="Logo" className="h-8 w-auto" />
+          <span className="text-xl font-bold tracking-tight text-primary">深圳一捧春晖科技有限公司</span>
+        </Link>
         <div className="flex gap-6 text-sm font-medium text-muted-foreground">
-          <a href="#products" className="hover:text-primary transition-colors">产品中心</a>
-          <a href="/technology" className="hover:text-primary transition-colors">核心技术</a>
-          <a href="/about" className="hover:text-primary transition-colors">关于我们</a>
-          <a href="/contact" className="hover:text-primary transition-colors">联系我们</a>
+          <Link href="/#products" className="hover:text-primary transition-colors">产品中心</Link>
+          <Link href="/technology" className="hover:text-primary transition-colors">核心技术</Link>
+          <Link href="/about" className="hover:text-primary transition-colors">关于我们</Link>
+          <Link href="/contact" className="hover:text-primary transition-colors">联系我们</Link>
         </div>
       </nav>
 
       {/* Hero Section */}
-      <section className="w-full h-[85vh] flex flex-col items-center justify-center text-center px-4 mt-16 bg-gradient-to-b from-background via-background to-secondary/30 relative overflow-hidden">
-        {/* Abstract Background Element */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent/5 rounded-full blur-3xl -z-10 animate-pulse" />
+      <section className="relative w-full h-[600px] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-900 to-slate-900 z-0" />
+        <div className="absolute inset-0 opacity-20" style={{ backgroundImage: "url('/images/doc/image1.jpeg')", backgroundSize: 'cover', backgroundPosition: 'center' }} />
 
-        <div className="space-y-6 max-w-4xl z-10">
-          <div className="inline-block px-3 py-1 rounded-full bg-accent/10 text-accent text-xs font-semibold tracking-wider uppercase mb-2 border border-accent/20">
-            新一代半导体封装材料
+        <div className="relative z-10 text-center max-w-4xl px-6">
+          <div className="inline-block animate-bounce mb-4">
+            <span className="px-4 py-1.5 rounded-full bg-blue-500/20 text-blue-200 text-sm font-medium border border-blue-400/30">
+              自主研发 · 国产替代
+            </span>
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-primary leading-tight">
-            面向未来的先进封装 <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">高性能积层胶膜 (Type-ABF)</span>
+          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
+            高性能积层胶膜 <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-teal-400">
+              (Build-up Film)
+            </span>
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-            专为高密度互连 (HDI) 和 2.5D/3D 封装设计，提供优异的信号完整性和热稳定性。
+          <p className="text-xl text-gray-300 mb-10 leading-relaxed max-w-2xl mx-auto">
+            专为先进封装 (2.5D/3D, Chiplet) 打造的核心介电材料。 <br />
+            突破技术壁垒，赋能中国芯。
           </p>
           <div className="flex gap-4 justify-center mt-8">
             <a href="#products" className="px-8 py-3 rounded-md bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20">
