@@ -69,11 +69,11 @@ export default async function AboutPage() {
                         <div className="order-2 md:order-1 grid grid-cols-2 gap-4">
                             <div className="relative h-48 md:h-64 bg-card rounded-2xl overflow-hidden shadow-lg border border-border mt-8">
                                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                                <img src="/images/doc/mfg_mixing_pexels.jpg" alt="Compounding Workshop" className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                                <img src="/images/doc/final_mixing.jpg" alt="Compounding Workshop Environment" className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
                             </div>
                             <div className="relative h-48 md:h-64 bg-card rounded-2xl overflow-hidden shadow-lg border border-border">
                                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                                <img src="/images/doc/mfg_coating_pexels.jpg" alt="Coating Production Line" className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                                <img src="/images/doc/final_coating.jpg" alt="Precision Coating Line" className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
                             </div>
                         </div>
                         <div className="order-1 md:order-2 space-y-6">
