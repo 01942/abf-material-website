@@ -4,6 +4,7 @@ import { useState } from "react";
 
 export default function ContactForm() {
     const [name, setName] = useState("");
+    const [phone, setPhone] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
     const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
@@ -22,9 +23,10 @@ export default function ContactForm() {
                 },
                 body: JSON.stringify({
                     name,
+                    phone,
                     email,
                     message,
-                    _subject: `来自官网的咨询: ${name}`,
+                    _subject: `来自官网的咨询: ${name} (${phone})`,
                     _template: "table" // Optional: makes email look nicer
                 })
             });
@@ -32,6 +34,7 @@ export default function ContactForm() {
             if (res.ok) {
                 setStatus("success");
                 setName("");
+                setPhone("");
                 setEmail("");
                 setMessage("");
             } else {
@@ -75,6 +78,16 @@ export default function ContactForm() {
                 placeholder="您的姓名"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
+                required
+                disabled={status === "submitting"}
+                className="w-full border rounded-md p-2 text-sm bg-background disabled:opacity-50 focus:ring-1 focus:ring-primary focus:outline-none transition-all"
+            />
+            <input
+                type="tel"
+                name="phone"
+                placeholder="联系电话"
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
                 required
                 disabled={status === "submitting"}
                 className="w-full border rounded-md p-2 text-sm bg-background disabled:opacity-50 focus:ring-1 focus:ring-primary focus:outline-none transition-all"
