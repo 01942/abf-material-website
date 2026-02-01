@@ -80,7 +80,7 @@ export default async function AboutPage() {
                             <h2 className="text-3xl font-bold text-accent">制造能力 (Manufacturing)</h2>
                             <div className="border-l-4 border-accent pl-4">
                                 <p className="text-lg text-muted-foreground leading-relaxed">
-                                    拥有万级洁净车间与全自动精密涂布产线。
+                                    具备万级洁净车间与全自动精密涂布产线。
                                 </p>
                                 <p className="text-sm text-muted-foreground mt-4">
                                     {about.subsections?.[1]?.content}
