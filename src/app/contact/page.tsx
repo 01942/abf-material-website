@@ -1,6 +1,7 @@
 import { getLocalData } from "@/lib/data";
 import Link from "next/link";
 import { MapPin, Mail, Phone, User } from "lucide-react";
+import ContactForm from "@/components/ContactForm";
 
 export default async function ContactPage() {
     const data = await getLocalData();
@@ -71,14 +72,9 @@ export default async function ContactPage() {
                         </div>
                     </div>
 
-                    {/* Simple Form Placeholder */}
-                    <form className="bg-card border border-border p-6 rounded-xl space-y-4">
-                        <h3 className="font-bold mb-4">发送留言</h3>
-                        <input type="text" placeholder="您的姓名" className="w-full border rounded-md p-2 text-sm bg-background" />
-                        <input type="email" placeholder="电子邮箱" className="w-full border rounded-md p-2 text-sm bg-background" />
-                        <textarea rows={4} placeholder="留言内容" className="w-full border rounded-md p-2 text-sm bg-background resize-none"></textarea>
-                        <button type="button" className="w-full bg-primary text-primary-foreground py-2 rounded-md font-medium hover:bg-primary/90">发送</button>
-                    </form>
+
+                    {/* Functional Contact Form */}
+                    <ContactForm />
                 </div>
             </div>
         </main>
