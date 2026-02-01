@@ -24,12 +24,14 @@ export default async function AboutPage() {
                 </div>
             </nav>
 
-            <div className="max-w-4xl mx-auto w-full p-8 pt-16">
-                <h1 className="text-4xl font-bold text-primary mb-8">{about.title || "关于我们"}</h1>
+            <div className="max-w-7xl mx-auto w-full p-8 pt-16">
+                <div className="max-w-4xl mx-auto">
+                    <h1 className="text-4xl font-bold text-primary mb-8 text-center">{about.title || "关于我们"}</h1>
 
-                <div className="bg-gradient-to-br from-primary/5 to-accent/5 p-8 rounded-2xl mb-12">
-                    <div className="prose prose-lg dark:prose-invert max-w-none text-muted-foreground leading-relaxed whitespace-pre-line">
-                        {about.content}
+                    <div className="bg-gradient-to-br from-primary/5 to-accent/5 p-8 rounded-2xl mb-12">
+                        <div className="prose prose-lg dark:prose-invert max-w-none text-muted-foreground leading-relaxed whitespace-pre-line">
+                            {about.content}
+                        </div>
                     </div>
                 </div>
 
