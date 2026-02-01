@@ -1,6 +1,6 @@
 import { getLocalData } from "@/lib/data";
 import Link from "next/link";
-import { MapPin, Mail, Phone } from "lucide-react";
+import { MapPin, Mail, Phone, User } from "lucide-react";
 
 export default async function ContactPage() {
     const data = await getLocalData();
@@ -28,6 +28,18 @@ export default async function ContactPage() {
 
                 <div className="grid md:grid-cols-2 gap-12">
                     <div className="space-y-8">
+                        {contact.person && (
+                            <div className="flex items-start gap-4">
+                                <div className="bg-secondary p-3 rounded-lg text-primary">
+                                    <User size={24} />
+                                </div>
+                                <div>
+                                    <h3 className="font-bold mb-1">联系人</h3>
+                                    <p className="text-muted-foreground">{contact.person}</p>
+                                </div>
+                            </div>
+                        )}
+
                         <div className="flex items-start gap-4">
                             <div className="bg-secondary p-3 rounded-lg text-primary">
                                 <MapPin size={24} />
