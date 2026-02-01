@@ -15,7 +15,7 @@ export default function ContactForm() {
 
         try {
             // Using FormSubmit.co via AJAX
-            const res = await fetch("https://formsubmit.co/ajax/1406867377@qq.com", {
+            const res = await fetch("https://formsubmit.co/ajax/chunbo.gao@szypch.cn", {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json',
