@@ -1,12 +1,14 @@
 import { MetadataRoute } from 'next';
 
 export default function robots(): MetadataRoute.Robots {
+    const baseUrl = 'https://yipengchunhui.vercel.app';
+
     return {
         rules: {
             userAgent: '*',
             allow: '/',
-            disallow: '/admin/', // Hide admin from search engines
+            disallow: '/admin/',
         },
-        sitemap: 'https://yipengchunhui.vercel.app/sitemap.xml', // Your Vercel domain
+        sitemap: `${baseUrl}/sitemap.xml`,
     };
 }
