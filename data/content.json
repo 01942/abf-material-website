@@ -346,25 +346,25 @@
             "id": "app-advanced",
             "title": "先进封装 (Advanced Packaging)",
             "description": "应用于FC-BGA、Chiplet及2.5D/3D封装，提供细线路(L/S≤20μm)加工能力与高可靠性绝缘。",
-            "imageUrl": "/images/doc/image11.png"
+            "imageUrl": "/images/scenarios/scenario_advanced.png"
         },
         {
             "id": "app-hdi",
             "title": "高密度互连 (HDI/SLP)",
             "description": "适配RTF/VLP铜箔，兼容传统压合工艺，优异的填孔性能解决积层起泡痛点。",
-            "imageUrl": "/images/doc/image9.png"
+            "imageUrl": "/images/scenarios/scenario_hdi.png"
         },
         {
             "id": "app-fpc",
             "title": "柔性电子 (FPC/Flex)",
             "description": "高延伸率与耐折性，适用于折叠屏手机、可穿戴设备等动态弯折场景。",
-            "imageUrl": "/images/doc/image6.png"
+            "imageUrl": "/images/scenarios/scenario_fpc.png"
         },
         {
             "id": "app-power",
             "title": "功率与器件 (Power & Embedded)",
             "description": "高导热与极低CTE特性，满足板级封装(PLP)及大功率器件散热需求。",
-            "imageUrl": "/images/doc/image10.jpeg"
+            "imageUrl": "/images/scenarios/scenario_power.png"
         }
     ]
 }
