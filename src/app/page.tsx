@@ -206,7 +206,7 @@ export default async function Home() {
               <div className="w-px h-12 bg-border mx-4"></div>
               <div className="flex flex-col gap-1">
                 <span className="text-3xl font-bold text-accent">Top 1</span>
-                <span className="text-sm text-muted-foreground">国产化替代</span>
+                <span className="text-sm text-muted-foreground">行业领先</span>
               </div>
             </div>
             <div className="pt-6 relative z-10">
