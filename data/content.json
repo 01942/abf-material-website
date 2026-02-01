@@ -5,7 +5,7 @@
             "name": "F100 封装胶膜",
             "series": "F",
             "description": "F系列基础型。应用于标准封装基板，具有良好的绝缘性和工艺适应性。",
-            "imageUrl": "/images/doc/image2.png",
+            "imageUrl": "/images/products/product_f_series.png",
             "specs": {
                 "Thickness": "10~100 μm",
                 "Min. Melt viscosity": "115℃@20 Pa·s",
@@ -26,7 +26,7 @@
             "name": "F200 高填料封装胶膜",
             "series": "F",
             "description": "低CTE设计 (25 ppm/K)，适用于对尺寸稳定性要求较高的封装场景。",
-            "imageUrl": "/images/doc/image2.png",
+            "imageUrl": "/images/products/product_f_series.png",
             "specs": {
                 "Thickness": "10~100 μm",
                 "Min. Melt viscosity": "115℃@100 Pa·s",
@@ -47,7 +47,7 @@
             "name": "F300 高频低损耗胶膜",
             "series": "F",
             "description": "专为高频高速应用设计。极低的介电损耗 (Df 0.008) 和高Tg (200℃)。",
-            "imageUrl": "/images/doc/image2.png",
+            "imageUrl": "/images/products/product_f_series.png",
             "specs": {
                 "Thickness": "10~100 μm",
                 "Min. Melt viscosity": "120℃@80 Pa·s",
@@ -68,7 +68,7 @@
             "name": "F400 超低损耗胶膜",
             "series": "F",
             "description": "旗舰级低损耗材料 (Df 0.0045)。满足最严苛的5G/6G通信及AI服务器需求。",
-            "imageUrl": "/images/doc/image2.png",
+            "imageUrl": "/images/products/product_f_series.png",
             "specs": {
                 "Thickness": "10~100 μm",
                 "Min. Melt viscosity": "120℃@100 Pa·s",
@@ -89,7 +89,7 @@
             "name": "RC10 覆铜胶膜",
             "series": "RC",
             "description": "IRC系列标准款。优异的填充性和绝缘性，适用于中高端硬板PCB。",
-            "imageUrl": "/images/doc/image5.png",
+            "imageUrl": "/images/products/product_rc_series.png",
             "specs": {
                 "Thickness": "10~100 μm",
                 "Min. Melt viscosity": "115℃@20 Pa·s",
@@ -110,7 +110,7 @@
             "name": "RC20 低CTE覆铜胶膜",
             "series": "RC",
             "description": "改进的尺寸稳定性 (CTE 25 ppm/K) 和更低的介电损耗 (Df 0.012)。",
-            "imageUrl": "/images/doc/image5.png",
+            "imageUrl": "/images/products/product_rc_series.png",
             "specs": {
                 "Thickness": "10~100 μm",
                 "Min. Melt viscosity": "115℃@100 Pa·s",
@@ -131,7 +131,7 @@
             "name": "RC30 高频覆铜胶膜",
             "series": "RC",
             "description": "高模量 (9.5 GPa) 与低损耗 (Df 0.008) 的完美结合。耐热性极佳 (Tg 200℃)。",
-            "imageUrl": "/images/doc/image5.png",
+            "imageUrl": "/images/products/product_rc_series.png",
             "specs": {
                 "Thickness": "10~100 μm",
                 "Min. Melt viscosity": "120℃@80 Pa·s",
@@ -152,7 +152,7 @@
             "name": "RC40 超低损耗覆铜胶膜",
             "series": "RC",
             "description": "专为极低信号损耗设计 (Df 0.0045)，适配各种高端铜箔 (RTF/VLP/超薄铜)。",
-            "imageUrl": "/images/doc/image5.png",
+            "imageUrl": "/images/products/product_rc_series.png",
             "specs": {
                 "Thickness": "10~100 μm",
                 "Min. Melt viscosity": "120℃@100 Pa·s",
@@ -173,7 +173,7 @@
             "name": "CL60 柔性胶膜",
             "series": "CL",
             "description": "高柔韧性与高延伸率 (75%)，专为FPC软板及动态弯折场景设计。",
-            "imageUrl": "/images/doc/image7.png",
+            "imageUrl": "/images/products/product_cl_series.png",
             "specs": {
                 "Thickness": "5~25 μm",
                 "Tg (DMA)": "65℃",
@@ -193,7 +193,7 @@
             "name": "CL90 平衡型柔性胶膜",
             "series": "CL",
             "description": "在柔韧性和耐热性之间取得平衡 (Tg 90℃)。",
-            "imageUrl": "/images/doc/image7.png",
+            "imageUrl": "/images/products/product_cl_series.png",
             "specs": {
                 "Thickness": "5~25 μm",
                 "Tg (DMA)": "90℃",
@@ -213,7 +213,7 @@
             "name": "CL160 耐热柔性胶膜",
             "series": "CL",
             "description": "卓越的耐热性能 (Tg 160℃)，同时保持良好的柔性。",
-            "imageUrl": "/images/doc/image7.png",
+            "imageUrl": "/images/products/product_cl_series.png",
             "specs": {
                 "Thickness": "5~25 μm",
                 "Tg (DMA)": "160℃",
@@ -233,7 +233,7 @@
             "name": "TC1700 高性能积层胶膜",
             "series": "TC",
             "description": "专为板级封装(PLP)设计。极低CTE (13 ppm/K) 和高Tg (200℃)，有效控制翘曲。",
-            "imageUrl": "/images/doc/image3.jpeg",
+            "imageUrl": "/images/products/product_tc_series.png",
             "specs": {
                 "Min. Melt viscosity": "125℃@200 Pa·s",
                 "Tg (DMA)": "200℃",
@@ -256,7 +256,7 @@
             "name": "TC10 高导热绝缘胶膜",
             "series": "TC",
             "description": "突破性的高导热性能 (8 W/m·K)，解决高功率器件散热瓶颈。",
-            "imageUrl": "/images/doc/image3.jpeg",
+            "imageUrl": "/images/products/product_tc_series.png",
             "specs": {
                 "Min. Melt viscosity": "115℃@230 Pa·s",
                 "Tg (DMA)": "175℃",
