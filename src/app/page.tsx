@@ -29,7 +29,7 @@ export default async function Home() {
       {/* Hero Section */}
       <section className="relative w-full h-[600px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900 to-slate-900 z-0" />
-        <div className="absolute inset-0 opacity-20" style={{ backgroundImage: "url('/images/doc/image1.jpeg')", backgroundSize: 'cover', backgroundPosition: 'center' }} />
+        <div className="absolute inset-0 opacity-20" style={{ backgroundImage: "url('/images/doc/image4.jpeg')", backgroundSize: 'cover', backgroundPosition: 'center' }} />
 
         <div className="relative z-10 text-center max-w-4xl px-6">
           <div className="inline-block animate-bounce mb-4">
@@ -218,7 +218,7 @@ export default async function Home() {
           </div>
           <div className="relative h-[500px] bg-card rounded-2xl overflow-hidden shadow-2xl border border-border">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/doc/image4.jpeg" alt="R&D Lab" className="absolute inset-0 w-full h-full object-cover" />
+            <img src="/images/doc/image1.jpeg" alt="R&D Lab" className="absolute inset-0 w-full h-full object-cover" />
             <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-6">
               <p className="text-white font-medium">拥有近千平米先进材料研发实验室</p>
             </div>
