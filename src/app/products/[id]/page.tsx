@@ -96,7 +96,7 @@ export default async function ProductPage({ params }: Props) {
                                     {Object.entries(product.specs || {}).map(([key, val]: any, idx) => (
                                         <tr key={key} className={idx % 2 === 0 ? "bg-background" : "bg-secondary/10 hover:bg-secondary/20 transition-colors"}>
                                             <td className="p-4 pl-6 font-medium text-foreground">{key}</td>
-                                            <td className="p-4 font-bold font-mono text-primary">{val}</td>
+                                            <td className="p-4 font-bold text-primary">{val}</td>
                                         </tr>
                                     ))}
                                 </tbody>
