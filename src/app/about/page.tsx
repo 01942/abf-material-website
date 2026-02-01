@@ -55,7 +55,7 @@ export default async function AboutPage() {
                         <div className="grid grid-cols-2 gap-4">
                             <div className="relative h-48 md:h-64 bg-card rounded-2xl overflow-hidden shadow-lg border border-border">
                                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                                <img src="/images/doc/real_film.png" alt="R&D Lab 1" className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                                <img src="/images/doc/rd_lab_bright.jpg" alt="R&D Material Analysis" className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
                             </div>
                             <div className="relative h-48 md:h-64 bg-card rounded-2xl overflow-hidden shadow-lg border border-border mt-8">
                                 {/* eslint-disable-next-line @next/next/no-img-element */}
