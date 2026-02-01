@@ -145,6 +145,49 @@ export default async function Home() {
         </div>
       </section>
 
+
+
+      {/* Application Scenarios - New Section */}
+      <section className="w-full py-24 px-8 bg-zinc-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent inline-block mb-4">
+              核心应用场景
+            </h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+              赋能前沿电子制造，从芯片封装到系统集成
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {data.applications?.map((app: any) => (
+              <div key={app.id} className="group bg-card rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-border/50">
+                <div className="relative h-48 overflow-hidden">
+                  <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors z-10" />
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={app.imageUrl}
+                    alt={app.title}
+                    className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="font-bold text-lg mb-2 text-primary group-hover:text-accent transition-colors">
+                    {app.title.split('(')[0]}
+                    <span className="block text-xs font-normal text-muted-foreground mt-1">
+                      {app.title.match(/\((.*?)\)/)?.[1]}
+                    </span>
+                  </h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    {app.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* About Section Highlights - Enhanced */}
       <section className="w-full py-24 px-8 bg-secondary/5">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
@@ -203,6 +246,6 @@ export default async function Home() {
           </div>
         </div>
       </section>
-    </main>
+    </main >
   );
 }

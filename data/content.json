@@ -233,7 +233,7 @@
             "name": "TC1700 高性能积层胶膜",
             "series": "TC",
             "description": "专为板级封装(PLP)设计。极低CTE (13 ppm/K) 和高Tg (200℃)，有效控制翘曲。",
-            "imageUrl": "/images/doc/image1.jpeg",
+            "imageUrl": "/images/doc/image3.jpeg",
             "specs": {
                 "Min. Melt viscosity": "125℃@200 Pa·s",
                 "Tg (DMA)": "200℃",
@@ -256,7 +256,7 @@
             "name": "TC10 高导热绝缘胶膜",
             "series": "TC",
             "description": "突破性的高导热性能 (8 W/m·K)，解决高功率器件散热瓶颈。",
-            "imageUrl": "/images/doc/image1.jpeg",
+            "imageUrl": "/images/doc/image3.jpeg",
             "specs": {
                 "Min. Melt viscosity": "115℃@230 Pa·s",
                 "Tg (DMA)": "175℃",
@@ -339,5 +339,31 @@
             "email": "contact@yipengchunhui.com",
             "phone": "+86 755 8888 6666"
         }
-    }
+    },
+    "applications": [
+        {
+            "id": "app-advanced",
+            "title": "先进封装 (Advanced Packaging)",
+            "description": "应用于FC-BGA、Chiplet及2.5D/3D封装，提供细线路(L/S≤20μm)加工能力与高可靠性绝缘。",
+            "imageUrl": "/images/doc/image11.png"
+        },
+        {
+            "id": "app-hdi",
+            "title": "高密度互连 (HDI/SLP)",
+            "description": "适配RTF/VLP铜箔，兼容传统压合工艺，优异的填孔性能解决积层起泡痛点。",
+            "imageUrl": "/images/doc/image9.png"
+        },
+        {
+            "id": "app-fpc",
+            "title": "柔性电子 (FPC/Flex)",
+            "description": "高延伸率与耐折性，适用于折叠屏手机、可穿戴设备等动态弯折场景。",
+            "imageUrl": "/images/doc/image6.png"
+        },
+        {
+            "id": "app-power",
+            "title": "功率与器件 (Power & Embedded)",
+            "description": "高导热与极低CTE特性，满足板级封装(PLP)及大功率器件散热需求。",
+            "imageUrl": "/images/doc/image10.jpeg"
+        }
+    ]
 }
