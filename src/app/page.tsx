@@ -34,7 +34,7 @@ export default async function Home() {
         <div className="relative z-10 text-center max-w-4xl px-6">
           <div className="inline-block animate-bounce mb-4">
             <span className="px-4 py-1.5 rounded-full bg-blue-500/20 text-blue-200 text-sm font-medium border border-blue-400/30">
-              自主研发 · 国产替代
+              自主研发 · 全球供应
             </span>
           </div>
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
@@ -45,7 +45,7 @@ export default async function Home() {
           </h1>
           <p className="text-xl text-gray-300 mb-10 leading-relaxed max-w-2xl mx-auto">
             专为先进封装 (2.5D/3D, Chiplet) 打造的核心介电材料。 <br />
-            突破技术壁垒，赋能中国芯。
+            突破技术边界，赋能未来芯。
           </p>
           <div className="flex gap-4 justify-center mt-8">
             <a href="#products" className="px-8 py-3 rounded-md bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20">
