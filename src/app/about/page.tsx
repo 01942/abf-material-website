@@ -59,7 +59,7 @@ export default async function AboutPage() {
                             </div>
                             <div className="relative h-48 md:h-64 bg-card rounded-2xl overflow-hidden shadow-lg border border-border mt-8">
                                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                                <img src="/images/doc/image5.png" alt="R&D Testing Equipment" className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                                <img src="/images/doc/rd_lab_scene.jpg" alt="R&D Laboratory Scene" className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
                             </div>
                         </div>
                     </div>
