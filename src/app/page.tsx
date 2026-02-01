@@ -29,7 +29,7 @@ export default async function Home() {
       {/* Hero Section */}
       <section className="relative w-full h-[600px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900 to-slate-900 z-0" />
-        <div className="absolute inset-0 opacity-20" style={{ backgroundImage: "url('/images/doc/real_film.png')", backgroundSize: 'cover', backgroundPosition: 'center' }} />
+        <div className="absolute inset-0 opacity-30 grayscale sepia contrast-125 saturate-150 mix-blend-overlay" style={{ backgroundImage: "url('/images/products/product_app_hdi.png')", backgroundSize: 'cover', backgroundPosition: 'center' }} />
 
         <div className="relative z-10 text-center max-w-4xl px-6">
           <div className="inline-block animate-bounce mb-4">
