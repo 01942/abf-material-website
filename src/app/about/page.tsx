@@ -34,18 +34,59 @@ export default async function AboutPage() {
                 </div>
 
                 {/* Subsections (R&D, Factory) */}
-                {about.subsections && about.subsections.length > 0 && (
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 pt-4">
-                        {about.subsections.map((section: any, idx: number) => (
-                            <div key={idx} className="bg-card border border-border rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow">
-                                <h3 className="text-xl font-bold text-primary mb-4">{section.title}</h3>
-                                <p className="text-base text-muted-foreground leading-relaxed">
-                                    {section.content}
+                {/* R&D and Manufacturing Sections - Detailed Gallery Layout */}
+                <div className="space-y-24 mt-16 border-t border-border pt-16">
+
+                    {/* R&D Section */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                        <div className="space-y-6">
+                            <h2 className="text-3xl font-bold text-primary">研发实力 (R&D)</h2>
+                            <div className="border-l-4 border-primary pl-4">
+                                <p className="text-lg text-muted-foreground leading-relaxed">
+                                    始终坚持"材料基因组"研发理念，以科学驱动创新。
+                                </p>
+                                <p className="text-sm text-muted-foreground mt-4">
+                                    {about.subsections?.[0]?.content}
                                 </p>
                             </div>
-                        ))}
+                        </div>
+                        <div className="grid grid-cols-2 gap-4">
+                            <div className="relative h-48 md:h-64 bg-card rounded-2xl overflow-hidden shadow-lg border border-border">
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
+                                <img src="/images/doc/real_lab.png" alt="R&D Lab 1" className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                            </div>
+                            <div className="relative h-48 md:h-64 bg-card rounded-2xl overflow-hidden shadow-lg border border-border mt-8">
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
+                                <img src="/images/doc/image4.jpeg" alt="R&D Lab 2" className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                            </div>
+                        </div>
                     </div>
-                )}
+
+                    {/* Manufacturing Section */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                        <div className="order-2 md:order-1 grid grid-cols-2 gap-4">
+                            <div className="relative h-48 md:h-64 bg-card rounded-2xl overflow-hidden shadow-lg border border-border mt-8">
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
+                                <img src="/images/doc/image11.png" alt="Factory 1" className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                            </div>
+                            <div className="relative h-48 md:h-64 bg-card rounded-2xl overflow-hidden shadow-lg border border-border">
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
+                                <img src="/images/doc/image12.png" alt="Factory 2" className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                            </div>
+                        </div>
+                        <div className="order-1 md:order-2 space-y-6">
+                            <h2 className="text-3xl font-bold text-accent">制造能力 (Manufacturing)</h2>
+                            <div className="border-l-4 border-accent pl-4">
+                                <p className="text-lg text-muted-foreground leading-relaxed">
+                                    拥有万级洁净车间与全自动精密涂布产线。
+                                </p>
+                                <p className="text-sm text-muted-foreground mt-4">
+                                    {about.subsections?.[1]?.content}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <div className="grid md:grid-cols-2 gap-8 mt-12 pt-12 border-t border-border">
                     <div className="p-6 border border-border rounded-xl bg-card">

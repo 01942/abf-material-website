@@ -189,64 +189,39 @@ export default async function Home() {
       </section>
 
       {/* About Section Highlights - Enhanced */}
+      {/* Scientific Strength - Teaser */}
       <section className="w-full py-24 px-8 bg-secondary/5">
-        <div className="max-w-7xl mx-auto space-y-24">
-
-          {/* R&D Section */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-            <div className="space-y-6">
-              <h2 className="text-3xl font-bold text-primary">研发实力 (R&D)</h2>
-              <div className="border-l-4 border-primary pl-4">
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  {data.general?.about?.content?.split('\n')[0]}
-                </p>
-                <p className="text-sm text-muted-foreground mt-4">
-                  {data.general?.about?.subsections?.[0]?.content}
-                </p>
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+          <div className="space-y-6">
+            <h2 className="text-3xl font-bold text-primary">科学驱动 · 智造未来</h2>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              我们不仅制造材料，更定义材料。
+              从"材料基因组"的分子设计，到万级洁净车间的精密制造，一捧春晖致力于为半导体封装行业提供最可靠的积层胶膜解决方案。
+            </p>
+            <div className="pt-4 flex gap-4">
+              <div className="flex flex-col gap-1">
+                <span className="text-3xl font-bold text-primary">1000m²</span>
+                <span className="text-sm text-muted-foreground">研发实验室</span>
               </div>
-              <div className="pt-4">
-                <Link href="/about" className="text-primary font-medium hover:underline underline-offset-4">
-                  了解更多研发体系 &rarr;
-                </Link>
+              <div className="w-px h-12 bg-border mx-4"></div>
+              <div className="flex flex-col gap-1">
+                <span className="text-3xl font-bold text-accent">Top 1</span>
+                <span className="text-sm text-muted-foreground">国产化替代</span>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-4">
-              <div className="relative h-48 md:h-64 bg-card rounded-2xl overflow-hidden shadow-lg border border-border">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/images/doc/real_lab.png" alt="R&D Lab 1" className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
-              </div>
-              <div className="relative h-48 md:h-64 bg-card rounded-2xl overflow-hidden shadow-lg border border-border mt-8">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/images/doc/image4.jpeg" alt="R&D Lab 2" className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
-              </div>
+            <div className="pt-6">
+              <Link href="/about" className="inline-flex items-center px-6 py-3 border border-primary text-primary rounded-lg hover:bg-primary/5 transition-colors group">
+                查看研发与制造详情 <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform" />
+              </Link>
             </div>
           </div>
-
-          {/* Manufacturing Section */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-            <div className="order-2 md:order-1 grid grid-cols-2 gap-4">
-              <div className="relative h-48 md:h-64 bg-card rounded-2xl overflow-hidden shadow-lg border border-border mt-8">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/images/doc/image11.png" alt="Factory 1" className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
-              </div>
-              <div className="relative h-48 md:h-64 bg-card rounded-2xl overflow-hidden shadow-lg border border-border">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/images/doc/image12.png" alt="Factory 2" className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
-              </div>
-            </div>
-            <div className="order-1 md:order-2 space-y-6">
-              <h2 className="text-3xl font-bold text-accent">制造能力 (Manufacturing)</h2>
-              <div className="border-l-4 border-accent pl-4">
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  拥有万级洁净车间与全自动精密涂布产线。
-                </p>
-                <p className="text-sm text-muted-foreground mt-4">
-                  {data.general?.about?.subsections?.[1]?.content}
-                </p>
-              </div>
+          <div className="relative h-[400px] bg-card rounded-2xl overflow-hidden shadow-2xl border border-border group cursor-pointer" onClick={() => window.location.href = '/about'}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/images/doc/real_lab.png" alt="R&D Lab" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+              <p className="text-white font-medium">深入了解我们的全链路研发制造体系</p>
             </div>
           </div>
-
         </div>
       </section>
 
