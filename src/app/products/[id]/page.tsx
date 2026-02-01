@@ -57,7 +57,7 @@ export default async function ProductPage({ params }: Props) {
                             <img
                                 src={product.imageUrl || "/images/placeholder.jpg"}
                                 alt={product.name}
-                                className="w-full h-full object-contain hover:scale-105 transition-transform duration-500 grayscale sepia contrast-110 saturate-150"
+                                className="w-full h-full object-contain hover:scale-105 transition-transform duration-500"
                             />
                         </div>
 
